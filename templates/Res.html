@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motarek</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta thhp-equive="X-UA-Compatible" content="IE-edge, chrome=1">
+    <meta name="vievpart" content="width=device-width, initial-scale-1.0">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body onload="myFunction()">
+  <div id="loader"></div>  
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <div id="progress"></div>
+    <div id="scrollbath"></div>
+<!-------------------------------------------------------------------------- NavBar Start -------------------------------------------------------------------------->    
+    <div class="topnav">
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about"><i class="fa-solid fa-hand-holding-heart"></i> About</a>
+        <a href="#c"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+<!-------------------------------------------------------------------------- NavBar Ends --------------------------------------------------------------------------> 
+<!-------------------------------------------------------------------------- About Start -------------------------------------------------------------------------->   
+
+<!-------------------------------------------------------------------------- About Ends --------------------------------------------------------------------------> 
+<div class="infoo">
+  <div class="report">
+    <h1 class="re">The Report</h1>
+    <ul>
+    <li id="l">Lead Time: <span>{{Lead_Time}}</span></li>
+    <li id="l">Market Segment Type: <span>{{Market_Segment_Type}}</span></li>
+    <li id="l">AVG Price: <span>{{AVG_Price}}</span></li>
+    <li id="l">Special Requests: <span>{{Special_Requests}}</span></li>
+    <li id="l">Date of Reservation: <span>{{Date_of_Reservation}}</span></li>
+    <li id="l">Year: <span>{{year}}</span></li>
+  </ul>
+  </div>
+  <div class="Aboutt" id="aboutt">
+  <h1>The Result</h1>
+  <h1 class='ress' id="result"> {{ prediction_text }}</h1> 
+</div>
+</div> 
+<br>
+<br> 
+<!-------------------------------------------------------------------------- Footer Start ---------------------------------------------------------------------->   
+    <footer class="footer" id="c">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <div class="fot">
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/Bale.11.m8">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://x.com/mo_tareeek?t=A4B5bhpxH-ehnM56EjvETQ&s=09">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/mohamed-tarek-90954520a/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/mo_tareek?igsh=M3BtYmVkb2N1cXl1">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu" id="mn">
+          <li class="menu__item"><a class="menu__link" href="{{url_for('home')}}">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#f">Features</a></li>
+          <li class="menu__item"><a class="menu__link" href="#c">Contact</a></li>
+        </ul>
+        <p id="end">&copy;2023 Mohamed Tarek</p>
+      </div>
+      </footer>
+    </div>
+<!-------------------------------------------------------------------------- Footer Ends ---------------------------------------------------------------------->   
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="../static/js/main.js"></script>    
+</body>
+</html>
